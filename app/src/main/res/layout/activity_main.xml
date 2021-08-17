@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="www.iam_kira.bankingapp.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Simple Banking App"
+        android:textAlignment="center"
+        android:textColor="#DF711B"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hmpgmsg"
+        android:layout_width="350dp"
+        android:layout_height="94dp"
+        android:gravity="center"
+        android:text="Created By ~Vijay Biradar"
+        android:textColor="?attr/textcolor"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hmpglogo"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <Button
+        android:id="@+id/btnViewUsers"
+        android:layout_width="204dp"
+        android:layout_height="58dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="?attr/tintcolor"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:text="User List"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"></Button>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="145dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="120sp"
+        android:layout_marginTop="50sp"
+        android:fontFamily="serif-monospace"
+        android:onClick="darkmode"
+        android:text="Dark Mode"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#CD39E6" />
+
+</LinearLayout>
